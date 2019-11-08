@@ -2,17 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Mage : MonoBehaviour, IDamagable
+public  class Mage : MonoBehaviour, IDamagable
 {
+    private int maxHp;
+    private int currentHp;
+    private int maxMana;
+    private int currentMana;
+
     public ElementalHandler elementalHandler;
+
+
     public void TakeDamage(int amount)
     {
-        throw new System.NotImplementedException();
+        currentHp -= amount;
+        
     }
 
     public void CastSpell()
     {
-        Debug.Log("Spell");
+        Spell spellToCast = SpellBook.Instance.GetSpellFromCombo(elementalHandler.GetCurrentCombo());
+        if(spellToCast.spellObject !=null)Instantiate(spellToCast.spellObject, transform.position, Quaternion.identity);
         elementalHandler.ClearSlots();
     }
 }

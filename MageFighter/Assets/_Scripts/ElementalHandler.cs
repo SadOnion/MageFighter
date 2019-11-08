@@ -37,6 +37,18 @@ public class ElementalHandler : MonoBehaviour
         }
 
     }
+    public ElementType[] GetCurrentCombo()
+    {
+        List<ElementType> list = new List<ElementType>();
+        foreach (var item in slots)
+        {
+            if(item.IsEmpty() == false)
+            {
+                list.Add(item.GetElement().type);
+            }
+        }
+        return list.ToArray();
+    }
     private void OnValidate()
     {
         slots = GetComponentsInChildren<ElementalSlot>();
