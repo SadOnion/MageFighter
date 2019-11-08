@@ -3,9 +3,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName="New Spell",menuName="Spell")]
 public class Spell :ScriptableObject
 {
-    public ElementType[] thisSpellCombo;
-    public GameObject spellObject;
-
+    [SerializeField] private ElementType[] thisSpellCombo;
+    [SerializeField] private GameObject spellObject;
+    [SerializeField] private int manaCost;
     public bool IsSpellCombo(ElementType[] combo)
     {
         if(combo.Length == thisSpellCombo.Length)
@@ -22,4 +22,7 @@ public class Spell :ScriptableObject
             return false;
         }
     }
+    public ElementType[] GetCombo() => thisSpellCombo;
+    public GameObject GetSpellObject() => spellObject;
+    public int GetManaCost() => manaCost;
 }

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: BasicFire
   m_EditorClassIdentifier: 
   thisSpellCombo: 01000000
-  spellObject: {fileID: 126357828030110325, guid: 26feae0fb7aefa74a8754c9f4cbf44ff,
+  spellObject: {fileID: 8871531335515451883, guid: 63b0b34f2239b0441845d7d1f7ca0ef4,
     type: 3}
