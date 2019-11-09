@@ -48,7 +48,7 @@ public class InputHandler : MonoBehaviour
                 { 
                     mage.CastSpell();
                 }
-            }`
+            }
         }
     }
 }
