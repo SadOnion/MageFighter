@@ -6,59 +6,45 @@ using UnityEngine.Events;
 
 public  class Mage : MonoBehaviour, IDamagable
 {
-    public UnityEvent OnHpChange;
-    public UnityEvent OnManaChange;
     public ElementalHandler elementalHandler;
 
-    [SerializeField]private int maxHp;
-    private int currentHp;
-    [SerializeField]private int maxMana;
-    private int currentMana;
-
-    private void Start()
-    {
-        currentHp = maxHp;
-        currentMana = maxMana;
-    }
+    public Resource health;
+    public Resource mana;
+    
 
     public void CastSpell()
     {
         Spell spellToCast = SpellBook.Instance.GetSpellFromCombo(elementalHandler.GetCurrentCombo());
-        if(currentMana >= spellToCast.GetManaCost())
+        if(mana.Use(spellToCast.GetManaCost()))
         {
             GameObject spellObject = spellToCast.GetSpellObject();
             if (spellObject != null)
             {
-                Instantiate(spellObject, transform.position, Quaternion.identity);
+                Instantiate(spellObject, transform.position+Vector3.right*-Math.Sign(transform.position.x), Quaternion.identity);
             }
-            UseMana(spellToCast.GetManaCost());
+            
             elementalHandler.ClearSlots();
 
         }
+        else
+        {
+            // No Mana
+        }
     }
 
-    private void UseMana(int amount)
-    {
-        currentMana -= amount;
-        OnManaChange?.Invoke();
-    }
+
     public void TakeDamage(int amount)
     {
-        currentHp -= amount;
-        OnHpChange?.Invoke();
+        if (health.Use(amount) == false)
+        {
+            health.UseAll();
+            Die();
+        }
     }
-    public void SpendMana(int amount)
+
+    private void Die()
     {
-        currentMana -= amount;
-        OnManaChange?.Invoke();
-    }
-    public float GetHpRatio()
-    {
-        return (float)currentHp / maxHp;
-    }
-    public float GetManaRatio()
-    {
-        return (float)currentMana / maxMana;
+        throw new NotImplementedException();
     }
 }
 

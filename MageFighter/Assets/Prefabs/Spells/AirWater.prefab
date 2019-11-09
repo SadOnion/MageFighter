@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3255966516223706189}
   - component: {fileID: 3765084602426042836}
   - component: {fileID: 2603499625420414927}
+  - component: {fileID: 805026265911769188}
   m_Layer: 0
   m_Name: AirWater
   m_TagString: Untagged
@@ -81,6 +82,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startVelocity: {x: 5, y: 0}
+--- !u!114 &805026265911769188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7137990641161191113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b5f21ea8a3bd2649ae82f120d00b2cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToDestroy: 5
 --- !u!1001 &5443055517378451400
 PrefabInstance:
   m_ObjectHideFlags: 0

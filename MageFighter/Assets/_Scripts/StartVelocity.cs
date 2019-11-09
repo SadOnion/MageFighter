@@ -11,7 +11,8 @@ public class StartVelocity : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
-        body.velocity = startVelocity;
+        float direction = -Mathf.Sign(transform.position.x);
+        body.velocity = new Vector2(startVelocity.x*direction,startVelocity.y);
     }
 
 

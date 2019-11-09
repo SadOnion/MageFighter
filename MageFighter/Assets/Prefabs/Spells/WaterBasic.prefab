@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 210732688477853884}
   - component: {fileID: 6109960912471496620}
   - component: {fileID: 7914212910629879855}
+  - component: {fileID: -8502406216933592634}
   m_Layer: 0
   m_Name: WaterBasic
   m_TagString: Untagged
@@ -67,6 +68,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startVelocity: {x: 5, y: 0}
+--- !u!114 &-8502406216933592634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385248595398722586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b5f21ea8a3bd2649ae82f120d00b2cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToDestroy: 5
 --- !u!1001 &826499709577433612
 PrefabInstance:
   m_ObjectHideFlags: 0
