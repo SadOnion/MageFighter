@@ -16,3 +16,5 @@ MonoBehaviour:
   spellObject: {fileID: 1385248595398722586, guid: 5aa60593d40043f4286ba3097ea205eb,
     type: 3}
   manaCost: 3
+  counters:
+  - {fileID: 11400000, guid: dc19aa591117e5147a477b626f1c9bd4, type: 2}

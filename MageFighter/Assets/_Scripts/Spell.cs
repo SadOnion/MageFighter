@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 [CreateAssetMenu(fileName="New Spell",menuName="Spell")]
 public class Spell :ScriptableObject
@@ -6,6 +7,7 @@ public class Spell :ScriptableObject
     [SerializeField] private ElementType[] thisSpellCombo = null;
     [SerializeField] private GameObject spellObject = null;
     [SerializeField] private int manaCost = 0;
+    public List<Spell> counters;
     public bool IsSpellCombo(ElementType[] combo)
     {
         if(combo.Length == thisSpellCombo.Length)

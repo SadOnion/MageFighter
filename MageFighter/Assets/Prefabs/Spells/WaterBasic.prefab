@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 6109960912471496620}
   - component: {fileID: 7914212910629879855}
   - component: {fileID: -8502406216933592634}
+  - component: {fileID: 4074977240528347612}
+  - component: {fileID: -7921587337880889700}
+  - component: {fileID: 2633355009927675230}
   m_Layer: 0
   m_Name: WaterBasic
   m_TagString: Untagged
@@ -81,6 +84,74 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToDestroy: 5
+--- !u!114 &4074977240528347612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385248595398722586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c018700142ecc1246b63c61e8a3bf448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnCounter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -7921587337880889700}
+        m_MethodName: SpawnParticle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: -8502406216933592634}
+        m_MethodName: DestroyNow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  thisSpell: {fileID: 11400000, guid: b655bc11841e33b408e920a1531300bc, type: 2}
+--- !u!114 &-7921587337880889700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385248595398722586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3a61a480556333408364efd8f6b3b24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: {fileID: 7041656973771588421, guid: 036eb5e87d3422a419cb69ebc73e11d2,
+    type: 3}
+--- !u!58 &2633355009927675230
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385248595398722586}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.2
 --- !u!1001 &826499709577433612
 PrefabInstance:
   m_ObjectHideFlags: 0

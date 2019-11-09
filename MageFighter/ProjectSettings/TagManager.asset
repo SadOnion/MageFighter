@@ -38,6 +38,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BackGround
+    uniqueID: 2271740375
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Mages
+    uniqueID: 1568157413
+    locked: 0
+  - name: Spells
+    uniqueID: 26556221
     locked: 0

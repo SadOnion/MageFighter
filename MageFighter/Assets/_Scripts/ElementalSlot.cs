@@ -18,12 +18,15 @@ public class ElementalSlot : MonoBehaviour
         isEmpty = false;
         this.element = element;
         image.sprite = element.image;
+        image.color = new Color(image.color.r, image.color.g, image.color.b, 1);
+
     }
     public void ClearSlot()
     {
         isEmpty = true;
         element = null;
-        image.sprite = null; 
+        image.sprite = null;
+        image.color = new Color(image.color.r, image.color.g, image.color.b, 0);
     }
     public Element GetElement()
     {

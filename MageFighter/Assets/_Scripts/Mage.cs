@@ -4,37 +4,57 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public  class Mage : MonoBehaviour, IDamagable
+public class Mage : MonoBehaviour, IDamagable
 {
     public ElementalHandler elementalHandler;
-
     public Resource health;
     public Resource mana;
-
+    public bool readyToCast { get; private set; }
     private void Start()
     {
+        readyToCast = true;
         StartCoroutine(ReplenishMana());
     }
     public void CastSpell()
     {
-        Spell spellToCast = SpellBook.Instance.GetSpellFromCombo(elementalHandler.GetCurrentCombo());
-        if(mana.Use(spellToCast.GetManaCost()))
+        if (readyToCast)
         {
-            GameObject spellObject = spellToCast.GetSpellObject();
-            if (spellObject != null)
-            {
-                Instantiate(spellObject, transform.position+Vector3.right*-Math.Sign(transform.position.x), Quaternion.identity);
-            }
+                Spell spellToCast = SpellBook.Instance.GetSpellFromCombo(elementalHandler.GetCurrentCombo());
+                if(mana.Use(spellToCast.GetManaCost()))
+                {
+                    GameObject spellObject = spellToCast.GetSpellObject();
+                    
             
-            elementalHandler.ClearSlots();
+                    StartCoroutine(Casting(spellObject,spellToCast));
 
+                }
+                else
+                {
+                    // No Mana
+                }
         }
-        else
-        {
-            // No Mana
-        }
+        
     }
 
+    private IEnumerator Casting(GameObject spellObject, Spell spellToCast)
+    {
+        readyToCast = false;
+        float timer = 0;
+        float timeToCast = GameConst.CAST_TIME * spellToCast.GetCombo().Length;
+        while(timer < timeToCast)
+        {
+            yield return new WaitForEndOfFrame();
+            timer += Time.deltaTime;
+            elementalHandler.castBar.UpdateBar(timer/timeToCast);
+        }
+        if (spellToCast != null)
+        {
+            Instantiate(spellObject, transform.position + Vector3.right * -Math.Sign(transform.position.x), Quaternion.identity);
+        }
+        elementalHandler.castBar.UpdateBar(0);
+        readyToCast = true;
+        elementalHandler.ClearSlots();
+    }
 
     public void TakeDamage(int amount)
     {

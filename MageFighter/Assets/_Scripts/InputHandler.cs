@@ -20,32 +20,35 @@ public class InputHandler : MonoBehaviour
     }
     private void HandleInput()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (mage.readyToCast)
         {
-            elementalHandler.AddElement(up);
-        }
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            elementalHandler.AddElement(down);
-        }
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            elementalHandler.AddElement(right);
-        }
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            elementalHandler.AddElement(left);
-        }
-        if (Input.GetKeyDown(KeyCode.Backspace))
-        {
-            elementalHandler.ClearSlots();
-        }
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (elementalHandler.HasAnyElements())
-            { 
-                mage.CastSpell();
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                elementalHandler.AddElement(up);
             }
+            if (Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                elementalHandler.AddElement(down);
+            }
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                elementalHandler.AddElement(right);
+            }
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                elementalHandler.AddElement(left);
+            }
+            if (Input.GetKeyDown(KeyCode.Backspace))
+            {
+                elementalHandler.ClearSlots();
+            }
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (elementalHandler.HasAnyElements())
+                { 
+                    mage.CastSpell();
+                }
+            }`
         }
     }
 }

@@ -10,4 +10,9 @@ public class Destroy : MonoBehaviour
     {
         Destroy(gameObject, timeToDestroy);
     }
+
+    public void DestroyNow()
+    {
+        Destroy(gameObject);
+    }
 }

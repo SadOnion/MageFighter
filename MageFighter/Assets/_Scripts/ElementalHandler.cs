@@ -7,6 +7,7 @@ public class ElementalHandler : MonoBehaviour
     public ElementalSlot[] slots;
     private int nextElementSlot = 0;
     public Element def;
+    public CastBar castBar;
 
     public void AddElement(Element elem)
     {

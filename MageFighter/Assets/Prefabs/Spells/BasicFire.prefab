@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3898433555611864426}
   - component: {fileID: 3367640213224618853}
   - component: {fileID: -1648387999908326771}
+  - component: {fileID: 7505431147948845596}
   - component: {fileID: 35597182418836999}
   m_Layer: 0
   m_Name: BasicFire
@@ -99,6 +100,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToDestroy: 5
+--- !u!114 &7505431147948845596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8871531335515451883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3a61a480556333408364efd8f6b3b24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: {fileID: 7041656973771588421, guid: 036eb5e87d3422a419cb69ebc73e11d2,
+    type: 3}
 --- !u!114 &35597182418836999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,6 +126,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c018700142ecc1246b63c61e8a3bf448, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnCounter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7505431147948845596}
+        m_MethodName: SpawnParticle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: -1648387999908326771}
+        m_MethodName: DestroyNow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  thisSpell: {fileID: 11400000, guid: dc19aa591117e5147a477b626f1c9bd4, type: 2}
 --- !u!1001 &8755677809232078327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -118,6 +159,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4672981087569734873}
     m_Modifications:
+    - target: {fileID: 126357828030110325, guid: 26feae0fb7aefa74a8754c9f4cbf44ff,
+        type: 3}
+      propertyPath: m_Name
+      value: TestFire
+      objectReference: {fileID: 0}
     - target: {fileID: 2529431316088268364, guid: 26feae0fb7aefa74a8754c9f4cbf44ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -172,11 +218,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 126357828030110325, guid: 26feae0fb7aefa74a8754c9f4cbf44ff,
-        type: 3}
-      propertyPath: m_Name
-      value: TestFire
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26feae0fb7aefa74a8754c9f4cbf44ff, type: 3}
