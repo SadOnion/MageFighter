@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e639ad119923dd4459bcae26be943b60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startVelocity: {x: 5, y: 0}
+  startVelocity: {x: 6.5, y: 0}
 --- !u!114 &-1648387999908326771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,11 +118,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4672981087569734873}
     m_Modifications:
-    - target: {fileID: 126357828030110325, guid: 26feae0fb7aefa74a8754c9f4cbf44ff,
-        type: 3}
-      propertyPath: m_Name
-      value: TestFire
-      objectReference: {fileID: 0}
     - target: {fileID: 2529431316088268364, guid: 26feae0fb7aefa74a8754c9f4cbf44ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -177,6 +172,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 126357828030110325, guid: 26feae0fb7aefa74a8754c9f4cbf44ff,
+        type: 3}
+      propertyPath: m_Name
+      value: TestFire
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26feae0fb7aefa74a8754c9f4cbf44ff, type: 3}

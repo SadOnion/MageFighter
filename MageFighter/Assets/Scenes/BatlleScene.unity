@@ -821,6 +821,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: dc19aa591117e5147a477b626f1c9bd4, type: 2}
   - {fileID: 11400000, guid: 88889782906e7464ba8f1fc8e6775b9c, type: 2}
   - {fileID: 11400000, guid: b655bc11841e33b408e920a1531300bc, type: 2}
+  - {fileID: 11400000, guid: 14959cb61d8676b4ea1b8609b4042293, type: 2}
+  - {fileID: 11400000, guid: 6b64149b7161b3e4b93ff9a269dd6607, type: 2}
 --- !u!4 &619696412
 Transform:
   m_ObjectHideFlags: 0
@@ -1014,8 +1016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combo:
-  - {fileID: 11400000, guid: 5a4c671daba00bb498b9a35408a42fe6, type: 2}
-  - {fileID: 11400000, guid: 6fb1554658dd3c240b4c44e0533cf28f, type: 2}
+  - {fileID: 11400000, guid: 0dad1f178b6c45f4eadd8e68bf10a7e3, type: 2}
 --- !u!61 &781716625
 BoxCollider2D:
   m_ObjectHideFlags: 0

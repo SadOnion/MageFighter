@@ -15,4 +15,4 @@ MonoBehaviour:
   thisSpellCombo: 02000000
   spellObject: {fileID: 1385248595398722586, guid: 5aa60593d40043f4286ba3097ea205eb,
     type: 3}
-  manaCost: 5
+  manaCost: 3

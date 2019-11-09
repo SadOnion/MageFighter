@@ -67,7 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e639ad119923dd4459bcae26be943b60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startVelocity: {x: 5, y: 0}
+  startVelocity: {x: 6.5, y: 0}
 --- !u!114 &-8502406216933592634
 MonoBehaviour:
   m_ObjectHideFlags: 0

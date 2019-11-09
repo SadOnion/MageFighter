@@ -10,8 +10,11 @@ public  class Mage : MonoBehaviour, IDamagable
 
     public Resource health;
     public Resource mana;
-    
 
+    private void Start()
+    {
+        StartCoroutine(ReplenishMana());
+    }
     public void CastSpell()
     {
         Spell spellToCast = SpellBook.Instance.GetSpellFromCombo(elementalHandler.GetCurrentCombo());
@@ -40,6 +43,13 @@ public  class Mage : MonoBehaviour, IDamagable
             health.UseAll();
             Die();
         }
+    }
+    private IEnumerator ReplenishMana()
+    {
+        yield return new WaitForSeconds(1);
+        mana.Add(2);
+        StartCoroutine(ReplenishMana());
+
     }
 
     private void Die()
