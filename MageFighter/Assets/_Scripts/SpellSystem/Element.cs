@@ -4,4 +4,5 @@ public class Element : ScriptableObject
 {
     public ElementType type;
     public Sprite image;
+    public Color elementColor;
 }
