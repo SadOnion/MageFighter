@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class SpellTrigger : MonoBehaviour
 {
     public UnityEvent OnCounter;
-    [SerializeField] Spell thisSpell;
+    public Spell thisSpell;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         SpellTrigger collisionSpell = collision.gameObject.GetComponent<SpellTrigger>();
@@ -27,5 +27,9 @@ public class SpellTrigger : MonoBehaviour
             }
         }
 
+    }
+    public void Counter()
+    {
+        OnCounter?.Invoke();
     }
 }

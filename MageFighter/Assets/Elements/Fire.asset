@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   image: {fileID: 21300000, guid: e1228f038ec7759439eee101d8da0891, type: 3}
-  elementColor: {r: 1, g: 0.7602996, b: 0.16509432, a: 0}
+  elementColor: {r: 1, g: 0.21045299, b: 0.16470587, a: 0}
