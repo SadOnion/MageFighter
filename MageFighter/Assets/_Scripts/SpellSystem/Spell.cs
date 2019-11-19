@@ -7,6 +7,7 @@ public class Spell :ScriptableObject
     [SerializeField] private ElementType[] thisSpellCombo = null;
     [SerializeField] private GameObject spellObject = null;
     [SerializeField] private int manaCost = 0;
+    [SerializeField] private int dmg= 10;
     public List<Spell> counters;
     public bool IsSpellCombo(ElementType[] combo)
     {
@@ -27,4 +28,5 @@ public class Spell :ScriptableObject
     public ElementType[] GetCombo() => thisSpellCombo;
     public GameObject GetSpellObject() => spellObject;
     public int GetManaCost() => manaCost;
+    public int GetDmg() => dmg;
 }

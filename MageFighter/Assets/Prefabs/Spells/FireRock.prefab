@@ -146,7 +146,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -203,6 +203,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   thisSpell: {fileID: 11400000, guid: 2f31eb156faf3d8439aaff97b1b39895, type: 2}
+  destroyAfterAplliedDamage: 0
 --- !u!114 &3752613054229059602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,11 +238,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 210732688477853884}
     m_Modifications:
-    - target: {fileID: 126357828030110325, guid: 26feae0fb7aefa74a8754c9f4cbf44ff,
-        type: 3}
-      propertyPath: m_Name
-      value: TestFire
-      objectReference: {fileID: 0}
     - target: {fileID: 2529431316088268364, guid: 26feae0fb7aefa74a8754c9f4cbf44ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -296,6 +292,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 126357828030110325, guid: 26feae0fb7aefa74a8754c9f4cbf44ff,
+        type: 3}
+      propertyPath: m_Name
+      value: TestFire
       objectReference: {fileID: 0}
     - target: {fileID: 7378682402182693067, guid: 26feae0fb7aefa74a8754c9f4cbf44ff,
         type: 3}

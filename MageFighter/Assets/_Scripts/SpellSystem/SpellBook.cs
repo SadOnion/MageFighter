@@ -27,7 +27,7 @@ public class SpellBook : MonoBehaviour
         _instance = this;
     }
 
-    public Spell GetSpellFromCombo(ElementType[] combo)
+    public  Spell GetSpellFromCombo(ElementType[] combo)
     {
         
         foreach (var item in spells)

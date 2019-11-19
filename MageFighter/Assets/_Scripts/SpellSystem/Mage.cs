@@ -9,6 +9,8 @@ public class Mage : MonoBehaviour, IDamagable
     public ElementalHandler elementalHandler;
     public Resource health;
     public Resource mana;
+    public delegate void SpellFunc(Spell spell);
+    public event SpellFunc OnSpellCast;
     public bool readyToCast { get; private set; }
     private void Start()
     {
@@ -24,13 +26,13 @@ public class Mage : MonoBehaviour, IDamagable
                 {
                     GameObject spellObject = spellToCast.GetSpellObject();
                     
-            
+                    OnSpellCast?.Invoke(spellToCast);
                     StartCoroutine(Casting(spellObject,spellToCast));
 
                 }
                 else
                 {
-                    // No Mana
+                    //nomana
                 }
         }
         

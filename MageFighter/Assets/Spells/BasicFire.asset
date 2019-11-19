@@ -15,7 +15,8 @@ MonoBehaviour:
   thisSpellCombo: 01000000
   spellObject: {fileID: 8871531335515451883, guid: 63b0b34f2239b0441845d7d1f7ca0ef4,
     type: 3}
-  manaCost: 5
+  manaCost: 1
+  dmg: 10
   counters:
   - {fileID: 11400000, guid: b655bc11841e33b408e920a1531300bc, type: 2}
   - {fileID: 11400000, guid: 88889782906e7464ba8f1fc8e6775b9c, type: 2}
