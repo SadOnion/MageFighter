@@ -17,6 +17,14 @@ public class ElementalHandler : MonoBehaviour
             nextElementSlot++;
         }
     }
+    public void AddElement(ElementType type)
+    {
+        Element[] elements = Resources.FindObjectsOfTypeAll<Element>();
+        foreach (var item in elements)
+        {
+            if (item.type == type) AddElement(item);
+        }
+    }
     
     public void ClearSlots()
     {

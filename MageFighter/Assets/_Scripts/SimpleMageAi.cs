@@ -15,15 +15,17 @@ public class SimpleMageAi : MonoBehaviour
 
     private IEnumerator CastFireBallAfter(float time)
     {
-        yield return new WaitForSeconds(1);
-        foreach (var item in combo)
-        {
-        mage.elementalHandler.AddElement(item);
-
-        }
+        mage.elementalHandler.ClearSlots();
         yield return new WaitForSeconds(time);
+        Spell spell = SpellBook.Instance.GetRandomSpell();
+        foreach (var item in spell.GetCombo())
+        {
+            mage.elementalHandler.AddElement(item);
+            yield return new WaitForSeconds(.2f);
+        }
+        yield return new WaitForSeconds(.2f);
         mage.CastSpell();
-        StartCoroutine(CastFireBallAfter(3));
+        StartCoroutine(CastFireBallAfter(.5f));
 
     }
 }

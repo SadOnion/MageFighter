@@ -39,4 +39,8 @@ public class SpellBook : MonoBehaviour
         }
         return spells[0];
     }
+    public Spell GetRandomSpell()
+    {
+       return spells[UnityEngine.Random.Range(0, spells.Length)];
+    }
 }

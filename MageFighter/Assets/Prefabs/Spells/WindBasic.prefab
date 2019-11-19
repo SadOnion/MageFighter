@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7914212910629879855}
   - component: {fileID: -8502406216933592634}
   - component: {fileID: -2803984572862693083}
+  - component: {fileID: 2818055637237267560}
   m_Layer: 0
   m_Name: WindBasic
   m_TagString: Untagged
@@ -96,8 +97,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnCounter:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -8502406216933592634}
+        m_MethodName: DestroyNow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   thisSpell: {fileID: 11400000, guid: 6b64149b7161b3e4b93ff9a269dd6607, type: 2}
+--- !u!61 &2818055637237267560
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385248595398722586}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.3, y: 0.3}
+  m_EdgeRadius: 0
 --- !u!1001 &3687588599577022080
 PrefabInstance:
   m_ObjectHideFlags: 0
