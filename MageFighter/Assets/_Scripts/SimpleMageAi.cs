@@ -10,8 +10,11 @@ public class SimpleMageAi : MonoBehaviour
     public Mage player;
     private Queue<Spell> spellsToCast;
     private bool canCast;
+    private float timerToFireball = 5f;
+    private Spell fireBall;
     private void Start()
     {
+        fireBall = SpellBook.Instance.GetSpellFromCombo(new ElementType[] { ElementType.Earth, ElementType.Earth, ElementType.Earth });
         canCast = true;
         mage = GetComponent<Mage>();
         spellsToCast = new Queue<Spell>();
@@ -22,6 +25,12 @@ public class SimpleMageAi : MonoBehaviour
     private void Update()
     {
         if (canCast && mage.readyToCast && spellsToCast.Count > 0) StartCoroutine(CastSpell(spellsToCast.Dequeue()));
+        timerToFireball -= Time.deltaTime;
+        if(timerToFireball<=0)
+        {
+            timerToFireball = 5;
+            spellsToCast.Enqueue(fireBall);
+        }
     }
     private IEnumerator CastFireBallAfter(float time)
     {
