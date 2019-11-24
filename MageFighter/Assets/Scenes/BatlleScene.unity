@@ -273,6 +273,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1638531297111635744, guid: e025e56b16dd2b541a2f635036a61406,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e025e56b16dd2b541a2f635036a61406, type: 3}
 --- !u!1 &361385081
@@ -680,8 +685,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.21226418, g: 0.392797, b: 1, a: 1}
+  m_Material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_Color: {r: 0.22352943, g: 0.5568628, b: 0.9058824, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1473,6 +1478,11 @@ PrefabInstance:
       propertyPath: m_MaskInteraction
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1359743596320271941, guid: 0e6a41395a52004488ad39b2d13c4ae6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 1359743595691667790, guid: 0e6a41395a52004488ad39b2d13c4ae6,
         type: 3}
       propertyPath: player
@@ -1615,6 +1625,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5010085148292835948, guid: 8b12115ac5e092c46b4d4937c45cec68,
+        type: 3}
+      propertyPath: blendDistance
+      value: 0.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5010085148292835948, guid: 8b12115ac5e092c46b4d4937c45cec68,
+        type: 3}
+      propertyPath: isGlobal
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5010085148292835948, guid: 8b12115ac5e092c46b4d4937c45cec68,
+        type: 3}
+      propertyPath: weight
+      value: 0.058
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b12115ac5e092c46b4d4937c45cec68, type: 3}
