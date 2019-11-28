@@ -1,20 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7ce4b5d22eebd94fbea77be3d0c0a76, type: 3}
-  m_Name: AAA
-  m_EditorClassIdentifier: 
-  thisSpellCombo: 040000000400000004000000
-  spellObject: {fileID: 7356940655867558976, guid: 6bf5af6fd5525a54c923e5e00982b36b,
-    type: 3}
-  manaCost: 1
-  dmg: 1
-  counters: []
+version https://git-lfs.github.com/spec/v1
+oid sha256:d13c2485c6d28fe71d70783b389a0fdcc5302d5ce193802c51cbeba2f3a4da7a
+size 571
