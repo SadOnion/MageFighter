@@ -24,7 +24,7 @@ public class SimpleMageAi : MonoBehaviour
 
     private void Update()
     {
-        if (canCast && mage.readyToCast && spellsToCast.Count > 0) StartCoroutine(CastSpell(spellsToCast.Dequeue()));
+        if (canCast && mage.ReadyToCast && spellsToCast.Count > 0) StartCoroutine(CastSpell(spellsToCast.Dequeue()));
         timerToFireball -= Time.deltaTime;
         if(timerToFireball<=0)
         {

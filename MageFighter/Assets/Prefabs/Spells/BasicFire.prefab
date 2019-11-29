@@ -152,6 +152,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   thisSpell: {fileID: 11400000, guid: dc19aa591117e5147a477b626f1c9bd4, type: 2}
+  destroyAfterAplliedDamage: 1
 --- !u!1001 &8755677809232078327
 PrefabInstance:
   m_ObjectHideFlags: 0

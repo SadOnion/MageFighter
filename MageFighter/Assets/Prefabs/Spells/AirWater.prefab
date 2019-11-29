@@ -113,6 +113,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   thisSpell: {fileID: 11400000, guid: 88889782906e7464ba8f1fc8e6775b9c, type: 2}
+  destroyAfterAplliedDamage: 1
 --- !u!61 &3690471392540122409
 BoxCollider2D:
   m_ObjectHideFlags: 0

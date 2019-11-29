@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3fe8e8057bb4456dda01e236312f6307cb16f1254ae8d1a89caa77ca69c742f1
-size 703
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7ce4b5d22eebd94fbea77be3d0c0a76, type: 3}
+  m_Name: WindBasic
+  m_EditorClassIdentifier: 
+  thisSpellCombo: 04000000
+  spellObject: {fileID: 1385248595398722586, guid: 9a41f0eb66c1bf64784d6738baa3ede1,
+    type: 3}
+  manaCost: 1
+  dmg: 10
+  counters:
+  - {fileID: 11400000, guid: 89322af74caa6e04cae857178f3d4109, type: 2}
+  - {fileID: 11400000, guid: 5cde86aa88ff9554aa41c1c54dd5950e, type: 2}

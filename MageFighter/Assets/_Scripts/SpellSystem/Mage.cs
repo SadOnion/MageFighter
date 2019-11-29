@@ -11,15 +11,15 @@ public class Mage : MonoBehaviour, IDamagable
     public Resource mana;
     public delegate void SpellFunc(Spell spell);
     public event SpellFunc OnSpellCast;
-    public bool readyToCast { get; private set; }
+    public bool ReadyToCast { get; private set; }
     private void Start()
     {
-        readyToCast = true;
+        ReadyToCast = true;
         StartCoroutine(ReplenishMana());
     }
     public void CastSpell()
     {
-        if (readyToCast)
+        if (ReadyToCast)
         {
                 Spell spellToCast = SpellBook.Instance.GetSpellFromCombo(elementalHandler.GetCurrentCombo());
                 if(mana.Use(spellToCast.GetManaCost()))
@@ -40,7 +40,7 @@ public class Mage : MonoBehaviour, IDamagable
 
     private IEnumerator Casting(GameObject spellObject, Spell spellToCast)
     {
-        readyToCast = false;
+        ReadyToCast = false;
         float timer = 0;
         float timeToCast = GameConst.CAST_TIME * spellToCast.GetCombo().Length;
         while(timer < timeToCast)
@@ -54,7 +54,7 @@ public class Mage : MonoBehaviour, IDamagable
             Instantiate(spellObject, transform.position + Vector3.right * -Math.Sign(transform.position.x), Quaternion.identity);
         }
         elementalHandler.castBar.UpdateBar(0);
-        readyToCast = true;
+        ReadyToCast = true;
         elementalHandler.ClearSlots();
     }
 

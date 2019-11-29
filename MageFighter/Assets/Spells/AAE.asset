@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fd172358676192803c1126d01c9a36d423d377bc9b740767fda053f10ca54fe0
-size 572
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7ce4b5d22eebd94fbea77be3d0c0a76, type: 3}
+  m_Name: AAE
+  m_EditorClassIdentifier: 
+  thisSpellCombo: 030000000400000004000000
+  spellObject: {fileID: 3441411119797603208, guid: e1b8ac88d92a5c14aa22886945751b20,
+    type: 3}
+  manaCost: 1
+  dmg: 10
+  counters: []

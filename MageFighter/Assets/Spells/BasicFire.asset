@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:52f25b38b6ce18fb786b2aff2dddc57e1f1da9dcc627e975b0c085af69cc8d5e
-size 703
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7ce4b5d22eebd94fbea77be3d0c0a76, type: 3}
+  m_Name: BasicFire
+  m_EditorClassIdentifier: 
+  thisSpellCombo: 01000000
+  spellObject: {fileID: 8871531335515451883, guid: 63b0b34f2239b0441845d7d1f7ca0ef4,
+    type: 3}
+  manaCost: 1
+  dmg: 10
+  counters:
+  - {fileID: 11400000, guid: b655bc11841e33b408e920a1531300bc, type: 2}
+  - {fileID: 11400000, guid: 88889782906e7464ba8f1fc8e6775b9c, type: 2}

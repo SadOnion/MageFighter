@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class ElementalHandler : MonoBehaviour
 {
+    private Mage mage;
     public ElementalSlot[] slots;
     private int nextElementSlot = 0;
-    public Element def;
+    
     public CastBar castBar;
 
+    private void Start()
+    {
+        mage = GetComponentInParent<Mage>();
+    }
     public void AddElement(Element elem)
     {
         if (nextElementSlot < slots.Length)
@@ -16,6 +21,14 @@ public class ElementalHandler : MonoBehaviour
             slots[nextElementSlot].AddElement(elem);
             nextElementSlot++;
         }
+        StopAllCoroutines();
+        StartCoroutine(CastSpellAfterIdleFor(1f));
+    }
+
+    private IEnumerator CastSpellAfterIdleFor(float time)
+    {
+        yield return new WaitForSeconds(time);
+        mage.CastSpell();
     }
     public void AddElement(ElementType type)
     {

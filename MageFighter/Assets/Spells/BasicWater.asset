@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:83acbe42ea16292965fb3503c3affdaf2c8c6d90ee68b45528315683b0e21c96
-size 632
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7ce4b5d22eebd94fbea77be3d0c0a76, type: 3}
+  m_Name: BasicWater
+  m_EditorClassIdentifier: 
+  thisSpellCombo: 02000000
+  spellObject: {fileID: 1385248595398722586, guid: 5aa60593d40043f4286ba3097ea205eb,
+    type: 3}
+  manaCost: 1
+  dmg: 10
+  counters:
+  - {fileID: 11400000, guid: dc19aa591117e5147a477b626f1c9bd4, type: 2}
