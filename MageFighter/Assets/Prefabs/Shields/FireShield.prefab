@@ -12,6 +12,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: FireShield
       objectReference: {fileID: 0}
+    - target: {fileID: 7150600456210643897, guid: e1b8ac88d92a5c14aa22886945751b20,
+        type: 3}
+      propertyPath: protectionFrom
+      value: 
+      objectReference: {fileID: 11400000, guid: cf891902289f0064fb5a3ab57c8d93d5,
+        type: 2}
     - target: {fileID: 3441411119797603210, guid: e1b8ac88d92a5c14aa22886945751b20,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -67,11 +73,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7150600456210643897, guid: e1b8ac88d92a5c14aa22886945751b20,
-        type: 3}
-      propertyPath: protectionFrom
-      value: 
-      objectReference: {fileID: 11400000, guid: cf891902289f0064fb5a3ab57c8d93d5,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1b8ac88d92a5c14aa22886945751b20, type: 3}

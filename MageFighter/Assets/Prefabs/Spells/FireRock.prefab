@@ -122,8 +122,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 26556221
-  m_SortingLayer: 0
+  m_SortingLayerID: -545062969
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 9be31979679c40f43aa6b6b11aa2ac99, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -238,11 +238,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 210732688477853884}
     m_Modifications:
-    - target: {fileID: 126357828030110325, guid: 26feae0fb7aefa74a8754c9f4cbf44ff,
-        type: 3}
-      propertyPath: m_Name
-      value: TestFire
-      objectReference: {fileID: 0}
     - target: {fileID: 2529431316088268364, guid: 26feae0fb7aefa74a8754c9f4cbf44ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -297,6 +292,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 126357828030110325, guid: 26feae0fb7aefa74a8754c9f4cbf44ff,
+        type: 3}
+      propertyPath: m_Name
+      value: TestFire
       objectReference: {fileID: 0}
     - target: {fileID: 7378682402182693067, guid: 26feae0fb7aefa74a8754c9f4cbf44ff,
         type: 3}

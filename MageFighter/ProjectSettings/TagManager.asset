@@ -38,6 +38,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BackGround
+    uniqueID: 2310478605
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 346096433
+    locked: 0
+  - name: Spells
+    uniqueID: 3749904327
+    locked: 0
+  - name: ForeGround
+    uniqueID: 2192888567
     locked: 0
